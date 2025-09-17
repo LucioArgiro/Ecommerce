@@ -1,24 +1,28 @@
 import ProductCard from "../Components/Productcard";
 
+import Producto1 from "../image/Producto1.jpg";
+import Producto2 from "../image/Producto2.jpg";
+import Producto3 from "../image/Producto3.jpg";
+
 const Productos = () => {
   const productos = [
     {
       id: 1,
       title: "Trigo Inflado",
       price: 4900,
-      image: "/image/Producto1.jpg",
+      image: Producto1,
     },
     {
       id: 2,
       title: "Tostaditas de Arroz",
       price: 2000,
-      image: "/image/Producto2.jpg",
+      image: Producto2,
     },
     {
       id: 3,
       title: "Maiz Inflado",
       price: 5000,
-      image: "/image/Producto3.jpg",
+      image: Producto3,
     },
   ];
 
