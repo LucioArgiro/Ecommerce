@@ -42,7 +42,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-200">
             <li>Email: Razadistribucionyservicios@gmail.com</li>
             <li>Teléfono: +54 3813399240</li>
-            <li>Dirección: Av. Siempre Viva 123</li>
+            <li>Dirección: banda del río sali Ruta 306 , código postal 4109</li>
           </ul>
         </div>
 
