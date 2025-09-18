@@ -1,43 +1,45 @@
 import { Link } from "react-router-dom";
-import { useCartStore } from "../Store/Cartstore";
-
+import { useCartStore } from "../Store/Cartstore"
 const Navbar = () => {
   const totalItems = useCartStore((state) => state.getTotalItems());
 
-  const buttonStyle =
-    "bg-white text-[#162C78] px-4 py-2 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-100 transition flex items-center gap-2";
-
   return (
-    <nav className="bg-[#162C78] shadow-md px-8 py-4 flex justify-between items-center">
-      {/* Logo */}
-      <li className="list-none">
-        <Link to="/" className="text-2xl font-bold text-white tracking-wide">
+    <nav className="bg-[#162C78] shadow-md px-6 py-4 flex justify-between items-center">
+      <Link to="/" className="flex items-center gap-2">
+        <span className="text-2xl font-poppins font-bold text-white">
           Raza
-        </Link>
-      </li>
+        </span>
+      </Link>
 
       {/* Menú */}
-      <ul className="flex gap-6 font-medium items-center">
+      <ul className="flex gap-4 text-white font-inter font-medium items-center">
         <li>
-          <Link to="/">
-            <button className={buttonStyle}>Inicio</button>
+          <Link
+            to="/"
+            className="bg-white text-[#162C78] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition"
+          >
+            Inicio
           </Link>
         </li>
         <li>
-          <Link to="/productos">
-            <button className={buttonStyle}>Productos</button>
+          <Link
+            to="/productos"
+            className="bg-white text-[#162C78] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition"
+          >
+            Productos
           </Link>
         </li>
         <li className="relative">
-          <Link to="/carrito">
-            <button className={buttonStyle}>
-              🛒 Carrito
-              {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full shadow">
-                  {totalItems}
-                </span>
-              )}
-            </button>
+          <Link
+            to="/carrito"
+            className="bg-white text-[#162C78] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center"
+          >
+            🛒 Carrito
+            {totalItems > 0 && (
+              <span className="ml-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                {totalItems}
+              </span>
+            )}
           </Link>
         </li>
       </ul>
