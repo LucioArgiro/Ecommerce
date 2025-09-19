@@ -2,34 +2,35 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="bg-[#162C78] text-white py-10 mt-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <footer className="bg-[#162C78] text-white py-8 mt-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
         {/* Redes Sociales */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
-          <div className="flex gap-4">
+        <div className="text-center sm:text-left">
+          <h3 className="text-base sm:text-lg font-semibold mb-3">Síguenos</h3>
+          <div className="flex justify-center sm:justify-start gap-3 flex-wrap">
             <a
               href="#"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition"
+              className="w-9 h-9 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition text-sm"
             >
               <FaFacebookF />
             </a>
             <a
               href="#"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition"
+              className="w-9 h-9 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition text-sm"
             >
               <FaTwitter />
             </a>
             <a
               href="#"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition"
+              className="w-9 h-9 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition text-sm"
             >
               <FaInstagram />
             </a>
             <a
               href="https://www.instagram.com/razaservicioydistribucion?utm_source=qr&igsh=MXhqNGxwZ3c3NHVoaQ%3D%3D"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition" target="_blank"
+              className="w-9 h-9 flex items-center justify-center rounded-full bg-white text-[#162C78] hover:bg-gray-200 transition text-sm"
+              target="_blank"
             >
               <FaLinkedinIn />
             </a>
@@ -37,19 +38,21 @@ const Footer = () => {
         </div>
 
         {/* Contacto */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Contacto</h3>
-          <ul className="space-y-2 text-gray-200">
-            <li>Email: Razadistribucionyservicios@gmail.com</li>
+        <div className="text-center sm:text-left">
+          <h3 className="text-base sm:text-lg font-semibold mb-3">Contacto</h3>
+          <ul className="space-y-1 text-gray-200 text-sm sm:text-base">
+            <li>Email: <span className="break-words">Razadistribucionyservicios@gmail.com</span></li>
             <li>Teléfono: +54 3813399240</li>
-            <li>Dirección: banda del río sali Ruta 306 , código postal 4109</li>
+            <li>
+              Dirección: banda del río sali <br /> Ruta 306 , CP 4109
+            </li>
           </ul>
         </div>
 
         {/* Políticas */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Políticas</h3>
-          <ul className="space-y-2 text-gray-200">
+        <div className="text-center sm:text-left">
+          <h3 className="text-base sm:text-lg font-semibold mb-3">Políticas</h3>
+          <ul className="space-y-1 text-gray-200 text-sm sm:text-base">
             <li><a href="#" className="hover:underline">Política de Privacidad</a></li>
             <li><a href="#" className="hover:underline">Términos y Condiciones</a></li>
             <li><a href="#" className="hover:underline">Política de Reembolsos</a></li>
@@ -58,7 +61,7 @@ const Footer = () => {
       </div>
 
       {/* Línea inferior */}
-      <div className="mt-10 border-t border-gray-500 pt-6 text-center text-gray-300 text-sm">
+      <div className="mt-8 border-t border-gray-500 pt-4 text-center text-gray-300 text-xs sm:text-sm">
         © {new Date().getFullYear()} MiEmpresa. Todos los derechos reservados.
       </div>
     </footer>
