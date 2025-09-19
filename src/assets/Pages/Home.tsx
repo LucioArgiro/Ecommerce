@@ -38,9 +38,9 @@ const Home = () => {
           Acerca de Nosotros
         </h3>
         <p className="font-inter text-gray-700 leading-relaxed">
-          Somos una empresa comprometida en ofrecer la mejor tecnología al mejor precio. 
-          Creemos en la innovación, el servicio personalizado y la confianza en cada compra. 
-          Nuestro objetivo es brindarte productos modernos y de calidad para tu día a día.
+          Raza Distribución y Servicio es una empresa dedicada a la provisión y distribución de productos en la región, con base en Banda del Río Salí, sobre la Ruta 306 (CP 4109).
+Nos especializamos en brindar un servicio ágil, responsable y cercano, atendiendo tanto a clientes mayoristas como minoristas, garantizando puntualidad y compromiso en cada entrega.<br /><br />
+Nuestra cobertura incluye no solo Banda del Río Salí, sino también un amplio radio en el interior de la provincia, llegando a localidades como Termas, San Pablo, Lules, Las Cejas, Chañar, Gutiérrez, Bella Vista, Famaillá, entre otras. Gracias a esta red de distribución, logramos acercar nuestros productos a diferentes comunidades, acompañando el crecimiento comercial de la zona y fortaleciendo la relación con nuestros clientes.
         </p>
       </div>
     </section>
